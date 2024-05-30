@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/home_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_linear2_background"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+
+                    <!-- clothes title   -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Clothes"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <!-- clothes scroll view  -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="25dp">
+
+                            <!-- item of scrollable widget-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/clo1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="COAT"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1150 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="23dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart10"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <!-- item of scrollable widget-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/clo3" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="CROP-TOP"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="150 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="23dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart20"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <!-- item of scrollable widget-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/clo4" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="SUIT"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="750 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="23dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart30"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        tools:ignore="true" />
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <!-- item of scrollable widget-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/clo2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="CROP-TOP"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="true,TextSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="250 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="23dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart40"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <!-- clothes title layout-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Accssesories"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+                    <!-- accssories scroll -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="25dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/acc1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="sun glasses"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck"
+                                        android:layout_marginTop="10dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="150 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart50"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/acc2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="necklase"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck"
+                                        android:layout_marginTop="10dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="200 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart60"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/acc3" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="earring"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        tools:ignore="TextSizeCheck"
+                                        android:layout_marginTop="10dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="270 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart70"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/acc4" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="necklase"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        android:layout_marginTop="10dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="300 EGP"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonaddtocart80"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="55dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="Add to cart"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <!-- Pay Button -->
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
